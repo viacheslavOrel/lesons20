@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hillel home work</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form id="login" class="card form form__login">
+    <label for="loginField">Логин: </label>
+    <input name="mail" id="loginField" required type="text">
+    <label for="passwordField">Пароль: </label>
+    <input name="password" id="passwordField" required type="password">
+    <button class="col1-2" type="submit">Войти</button>
+</form>
+
+<form id="taskForm" class="card form form__task hidden">
+    <label class="col1-2">Новая задача</label>
+    <label for="taskContent">Задача: </label>
+    <textarea class="form__task--text" name="value" id="taskContent" placeholder="Задача" required></textarea>
+    <label for="taskPriority">Приоритет: </label>
+    <input name="priority" id="taskPriority" placeholder="1" required type="number" min="1" max="3">
+    <button class="col1-2" type="reset">Очистить</button>
+    <button class="col1-2" type="submit">Добавить</button>
+</form>
+
+<ul id="taskList" class="card taskList hidden"></ul>
+
+<script src="index.js"></script>
+</body>
+</html>
